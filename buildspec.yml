@@ -17,3 +17,5 @@ artifacts:
   # we include only the static build files
   files:
     - "**/*"
+  name: dev-teste
+  discard-paths: no
