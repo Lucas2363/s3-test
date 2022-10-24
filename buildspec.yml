@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  pre_build:
+  commands:
+    - aws s3 sync . s3://publick-bucket2
+  build:
+    commands:
+      # run build script
+      - echo Build started on `date`
+      - echo Building React Application...
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  # include all files required to run application
+  # we include only the static build files
+  files:
+    - "**/*"
+   # reference directory where build file is located
+  base-directory: "build"
