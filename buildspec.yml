@@ -17,5 +17,5 @@ artifacts:
   # we include only the static build files
   files:
     - "**/*"
-  name: My-App
+  name: MyAppBuild
   discard-paths: no
