@@ -18,5 +18,3 @@ artifacts:
   # we include only the static build files
   files:
     - "**/*"
-   # reference directory where build file is located
-  base-directory: "build"
