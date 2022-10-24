@@ -1,8 +1,9 @@
 version: 0.2
 phases:
   pre_build:
-  commands:
-    - aws s3 sync . s3://publick-bucket2
+    commands:
+      - echo installing dependencies...
+      - aws s3 sync . s3://publick-bucket2
   build:
     commands:
       # run build script
